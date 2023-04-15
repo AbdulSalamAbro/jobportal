@@ -1,0 +1,65 @@
+export default {
+  name: 'product',
+  title: 'Jobs',
+  type: 'document',
+  fields: [
+    {
+      name: 'name',
+      title: 'Name',
+      type: 'string',
+    },
+    {
+      name: 'price',
+      title: 'salary',
+      type: 'number',
+    },
+    {
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+    },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'name',
+        maxLength: 96,
+      },
+    },
+    {
+      name: 'brand',
+      title: 'Company name',
+      type: 'string',
+    },
+    {
+      name: 'category',
+      title: 'Category',
+      type: 'string',
+    },
+    {
+      name: 'rating',
+      title: 'Rating',
+      type: 'number',
+    },
+
+    {
+      name: 'numReviews',
+      title: 'NumReviews',
+      type: 'number',
+    },
+    {
+      name: 'countInStock',
+      title: 'Total number of jobs',
+      type: 'number',
+    },
+  ],
+};

@@ -217,7 +217,7 @@ export default function Layout({ title, description, children }) {
                 checked={darkMode}
                 onChange={darkModeChangeHandler}
               ></Switch>
-              <NextLink href="/cart" passHref>
+              {/* <NextLink href="/cart" passHref>
                 <Link>
                   <Typography component="span">
                     {cart.cartItems.length > 0 ? (
@@ -225,14 +225,14 @@ export default function Layout({ title, description, children }) {
                         color="secondary"
                         badgeContent={cart.cartItems.length}
                       >
-                        Cart
+                        
                       </Badge>
                     ) : (
                       'Cart'
                     )}
                   </Typography>
                 </Link>
-              </NextLink>
+              </NextLink> */}
               {userInfo ? (
                 <>
                   <Button
@@ -267,7 +267,7 @@ export default function Layout({ title, description, children }) {
                 </>
               ) : (
                 <NextLink href="/login" passHref>
-                  <Link>Login</Link>
+                  <Link>sign in</Link>
                 </NextLink>
               )}
             </Box>
